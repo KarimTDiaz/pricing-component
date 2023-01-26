@@ -2,3 +2,12 @@
 @use '../mixins/hover.scss' as*;
 @use '../mixins/pseudo.scss' as*;
 @use '../mixins/responsive.scss' as*;
+
+.cards-container{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+.card{
+    padding: 5rem;
+}
