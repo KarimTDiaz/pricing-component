@@ -4,12 +4,13 @@ const cardsElement = document.getElementById('cards');
 
 const plans = ['basic', 'professional', 'master'];
 
-const changeModeSubscription = toggle => {
+const changeModeSubscription = isChecked => {
+
   for (let index = 0; index < 3; index++) {
     cardsElement.children[index];
 
     for (let j = 0; j < 4; j++) {
-      if (toggle.checked) {
+      if (!isChecked) {
         cardsElement.children[plans[index]].children[j + 1].textContent =
           Object.values(SUBSCRIPTION__OPTIONS.monthly[plans[index]])[j];
       } else {
@@ -19,5 +20,7 @@ const changeModeSubscription = toggle => {
     }
   }
 };
+
+changeModeSubscription()
 
 export { changeModeSubscription };

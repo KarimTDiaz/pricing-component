@@ -5,5 +5,5 @@ import { changeModeSubscription } from './change-subscription.js';
 const toggleElement = document.getElementById('toggle');
 
 toggleElement.addEventListener('change', ev => {
-  changeModeSubscription(ev.target);
+  changeModeSubscription(ev.target.checked);
 });
