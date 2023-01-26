@@ -10,8 +10,44 @@
     <title>Vite Template</title>
   </head>
   <body>
-    <header class="header"></header>
-    <main class="main"></main>
+    
+    <main class="main">
+      <h1 class="title">Our Pricing</h1>
+      <div class="toggle-container">
+        <span class="text">Anually</span>
+        <input class="toggle-input" type="checkbox" id="toggle">
+        <label for="toggle" class="toggle__label"></label>
+        <span>Monthly</span>
+      </div>
+
+      <div id="cards" class="cards-container">
+
+        <div id="basic" class="card">
+          <h2 class="title title--small">Basic</h2>
+          <p class="price">$19.99</p>
+          <p class="text text--storage">500 GB Storage</p>
+          <p class="text text--users">2 Users Allowed</p>
+          <p class="text text--send-up">Send Up to 3 GB</p>
+          <a href="#" class="button">LEARN MORE</a>
+        </div>
+        <div id="professional" class="card">
+          <h2 class="title title--small">Professional</h2>
+          <p class="price">$24.99</p>
+          <p class="text text--storage">1 TB Storage</p>
+          <p class="text text--users">5 Users Allowed</p>
+          <p class="text text--send-up">Send Up to 10 GB</p>
+          <a href="#" class="button">LEARN MORE</a>
+        </div>
+        <div id="master" class="card">
+          <h2 class="title title--small">Master</h2>
+          <p class="price">$39.99</p>
+          <p class="text text--storage">2 TB Storage</p>
+          <p class="text text--users">10 Users Allowed</p>
+          <p class="text text--send-up">Send Up to 20 GB</p>
+          <a href="#" class="button">LEARN MORE</a>
+        </div>
+      </div>
+    </main>
     <footer class="footer"></footer>
     <script type="module" src="./js/index.js"></script>
   </body>
