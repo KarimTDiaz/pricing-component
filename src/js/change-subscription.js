@@ -5,10 +5,7 @@ const cardsElement = document.getElementById('cards');
 const plans = ['basic', 'professional', 'master'];
 
 const changeModeSubscription = isChecked => {
-
   for (let index = 0; index < 3; index++) {
-    cardsElement.children[index];
-
     for (let j = 0; j < 4; j++) {
       if (!isChecked) {
         cardsElement.children[plans[index]].children[j + 1].textContent =
@@ -21,6 +18,6 @@ const changeModeSubscription = isChecked => {
   }
 };
 
-changeModeSubscription()
+changeModeSubscription();
 
 export { changeModeSubscription };
